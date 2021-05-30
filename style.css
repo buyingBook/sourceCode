@@ -79,6 +79,128 @@ header {
     color: white;
 }
 
+#mainSection div {
+    display: inline;
+}
+
+#mainSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#bookMainInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainInfo {
+    width: 100%;
+}
+
+#author, #publishing {
+    font-size: 16px;
+}
+
+#bookImg {
+    display: flex;
+    padding: 4rem;
+    align-items: center;
+}
+
+#money {
+    width: 100%;
+}
+#money h3{
+    color: blue;
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+}
+
+#bookSubInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#detailInfo {
+    font-size: 18px;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#purchase {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: darkcyan;
+    justify-content: center;
+}
+
+#choiceZone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 3rem;
+    justify-content: center;
+}
+
+#choiceZone input {
+    text-align: right;
+    width: 5rem;
+    height: 2.5rem;
+}
+
+#choiceZone button {
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 20px;
+}
+
+#choiceZone input {
+    font-size: 16px;
+    font-family: 'Nanum Gothic', 'serif';
+}
+
+#choiceZone p {
+    width: 100%;
+    margin-right: 1rem;
+    text-align: right;
+    font-size: 20px;
+}
+
+#control {
+    padding: 2rem;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 3rem;
+    justify-content: center;
+}
+
+#control button {
+    display: inline;
+    width: 12rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #0099ff;
+    font-family: 'Nanum Gothic', 'serif';
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
 
     header {
@@ -95,6 +217,7 @@ header {
     #menuTrigger{
         display: none;
     }
+
     
     #menuBar {
         height: 4.7rem;
@@ -121,7 +244,6 @@ header {
         display: inline;
         text-align: center;
         color: white;
-        /* font-size: 14px; */
         float: left;
     }
 
@@ -138,154 +260,19 @@ header {
         margin-top: 3rem;
     }
 
-
     #mainSection {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-
-    }
-
-    #bookMainInfo {
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        flex-grow: 0;
+        justify-content: center;
+    }
+
+    #bookImg{
+        padding-top: 1rem;
+        padding-bottom: 0;
     }
     
-
-    #author, #publishing {
-        font-size: 16px;
-    }
-    
-    #bookImg {
-        padding-top: 2rem;
-        padding-left: 3rem;
-    }
-
-    #money h3{
-        color: blue;
-        font-size: 20px;
-        padding: 0;
-    }
-
     #bookSubInfo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
         margin-top: 10rem;
-    }
-
-    #detailInfo {
-        padding-left: 3rem;
-        font-size: 18px;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    #purchase {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    #choiceZone {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    
-    #control {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-}
-
-section {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-section div {
-    display: inline;
-}
-
-#bookMainInfo {
-    padding-left: 2rem;
-}
-
-#author, #publishing {
-    font-size: 16px;
-}
-
-#bookImg {
-    padding-top: 2rem;
-    padding-left: 3rem;
-}
-
-#money h3{
-    text-align: right;
-    padding-right: 5rem;
-    color: blue;
-    font-size: 20px;
-}
-
-#detailInfo {
-    padding-left: 3rem;
-    font-size: 18px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-#purchase {
-    padding-top: 1.5rem;
-}
-
-#choiceZone {
-    margin-top: -2rem;
-}
-
-li {
-    list-style-type: none;
-    padding-left: 3rem;
-}
-
-input {
-    text-align: right;
-    width: 5rem;
-    height: 2.5rem;
-}
-
-li button {
-    text-align: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 20px;
-}
-
-li input {
-    font-size: 16px;
-    font-family: 'Nanum Gothic', 'serif';
-}
-
-p {
-    display: inline-block;
-    padding-left: 9rem;
-    font-size: 20px;
-}
-
-
-#control {
-    margin-top: 3rem;
-    padding-left: 3rem;
-}
-
-#control button {
-    width: 12rem;
-    height: 2.5rem;
-    background-color: #50bcdf;
-    font-family: 'Nanum Gothic', 'serif';
-    font-size: 20px;
+    } 
 }
