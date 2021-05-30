@@ -11,31 +11,36 @@
 <body>
 <!-- 헤더 (사이트 설명) -->
 <header>
-    <img id="logo" src="img/logo.png" onclick="openNav()" width="170px"> 
-    <h3><strong>도서 구매 사이트</strong></h3>
+    <img id="logoImg" src="img/logo.png" width="170px"> 
+    <h2><strong>도서 구매 사이트</strong></h2>
 </header>
 <!-- 매뉴바 -->
-<!-- <span id="menubtn" style="font-size:20px;cursor:pointer;visibility:visible;" onclick="openNav()">&#9776; MENU</span> -->
-<nav id = "menuBar">
-    <a style="visibility:visible;" href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a>
+<nav id ="menuTrigger"  onclick="openNav()">
+    <span style="font-size:30px;cursor:pointer">&#9776;
+        <img id="logo" src="img/logo.png" width="170px"> 
+        <h4 style="font-size:20px;display: inline;"><strong> 도서 구매 사이트</strong></h4>
+    </span>
+</nav>
+
+<nav id = "menuBar" class = "menu">
+    <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a>
     <ul>
-        <li><a href="#"><h4>MAIN</h4></a></li>
-        <li><a href="#"><h4>학과별 책 구매</h4></a></li>
-        <li><a href="#"><h4>QnA</h4></a></li>
-        <li><a href="#"><h4>LOGIN</h4></a></li>
+        <li><a href="#"><h3>메인화면</h3></a></li>
+        <li><a href="#"><h3>책 구매</h3></a></li>
+        <li><a href="#"><h3>질의응답</h3></a></li>
+        <li><a href="#"><h3>마이페이지</h3></a></li>
     </ul>    
 </nav>
-<!-- 페이지 내용 -->
+
+<!-- 컨텐츠 -->
 <section id = "mainSection">
-    컨텐츠가 들어 갈 공간입니다^_^
+
 </section>
 <!-- 바닥글 -->
 <footer></footer>
 <script>
 if(matchMedia("(min-width: 768px)").matches) {
-    var logo = document.getElementById("logo");
     var close = document.getElementById("closebtn");
-    logo.onclick = "none";
     close.style.visibility = "hidden";
 } else {
     logo.onclick = "openNav()";
