@@ -2,93 +2,135 @@
 body {font-family: 'Nanum Gothic', 'serif';}
 
 header {
+    display: none;
     padding: 1rem;
 }
-header > h2 {
-    display: inline;
-    padding-left: 1rem;
-}
 
-nav {
+.menu {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #50bcdf;
+    background-color: #0099ff;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
-
-nav li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav a {
+  
+.menu a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: black;
+    color: white;  
     display: block;
+    transition: 0.3s;
 }
   
-nav a:hover {
-    color: #f1f1f1;
+.menu ul li a :hover {
+    color: black;
 }
-  
-nav .closebtn {
+
+.closebtn {
     position: absolute;
+    color: white;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
 }
 
+#menuTrigger{
+    display:block;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px  black;
+    color: white;  
+    background-color: #0099ff
+}
+
+
+#menuBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #0099ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#menuBar li {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#menuBar a {
+    text-decoration: none;
+    display: block;
+}
+
+#menuBar li a {
+    color: white;
+}
+
 @media (min-width: 768px) {
-    nav {
-        height: 50px;
+
+    header {
+        display: block;
+        padding: 1rem;
+    }
+
+    header > h2 {
+        display: inline;
+        padding-left: 1rem;
+    }
+
+
+    #menuTrigger{
+        display: none;
+    }
+    
+    #menuBar {
+        height: 4.7rem;
         width: 100%;
         padding: 0;
         margin-top: 5rem;
         display: block;
     }
     
-    nav ul {
+    #menuBar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        /* background-color: #50bcdf; */
     }
     
-    nav ul:after{
+    #menuBar ul:after{
         content:'';
         display: block;
         clear:both;
     }
     
-    nav li {
+    #menuBar li {
         width: 25%;
-        height: 50px;
         display: inline;
         text-align: center;
-        color: black;
-        font-size: 14px;
+        color: white;
+        /* font-size: 14px; */
         float: left;
     }
 
-    nav li:hover {
+    #menuBar li:hover {
         background: blue;
         color: white;
     }
 
-    nav a {
-        text-decoration: none;
-        color: black;
-    }
-
-    nav a:hover {
-        text-decoration: none;
+    .menu ul li a :hover {
         color: white;
     }
 
