@@ -84,6 +84,7 @@ header {
 }
 
 .mainSection {
+    background-color: mediumorchid;
     width: 100%;
     height: auto;
     display: flex;
@@ -93,6 +94,7 @@ header {
 }
 
 .mainContainer {
+    background-color: mediumvioletred;
     display: inherit;
     flex-direction: column;
     flex-wrap: wrap;
@@ -201,24 +203,52 @@ header {
     margin: 1%;
 }
 
-#bookListWrapper {
+.mainContainer .optionContainer {
+    background-color: navy;
+    display: block;
+    width: 100%;
+    height: 5rem;
+}
+
+.mainContainer .bookListWrapper {
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
     width: 100%;
-    height: 500rem;
+    height: 50rem;
     background-color: aquamarine;
     justify-content: center;
 
 }
 
-#bookList {
-    display: inherit;
-    /* flex-direction: column;
-    flex-flow: nowrap; */
-    width: 80%;
-    height: inherit;
+.bookList {
+    width: 95%;
+    height: auto;
     background-color:chartreuse;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.bookList tr {
+    background-color: lightseagreen;
+    width: 80%;
+}
+
+.image {
+    background-color: lightcoral;
+    width: 25%;
+}
+
+.price {
+    background-color: lightsalmon;
+    width: 25%;
+}
+
+.mainContainer .pagingContainer {
+    background-color: navy;
+    display: block;
+    width: 100%;
+    height: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -314,13 +344,17 @@ header {
         margin-top: 10rem;
     } 
 
-    #bookListWrapper {
+    .bookListWrapper {
         display: flex;
         flex-direction: column;
         flex-flow: nowrap;
         width: 80%;
         height: 500rem;
         background-color: aquamarine;
+    }
+
+    .mainContainer {
+        width: 60%;
     }
     
 }
