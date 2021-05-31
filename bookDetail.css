@@ -118,16 +118,8 @@ header {
     margin-left: 5%;
 }
 
-<<<<<<< Updated upstream
-#bookImg {
-    display: flex;
-    padding: 4rem;
-    padding-bottom: 0;
-    align-items: center;
-=======
 #mainInfo {
     width: 100%;
->>>>>>> Stashed changes
 }
 
 #money {
@@ -189,29 +181,18 @@ header {
 }
 
 #control {
-<<<<<<< Updated upstream
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 3rem;
-=======
     padding: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     list-style-type: none;
->>>>>>> Stashed changes
     justify-content: center;
 }
 
 #control button {
-<<<<<<< Updated upstream
-    width: calc(80%/2);
-=======
     display: inline;
     width: 45%;
->>>>>>> Stashed changes
     height: 2.5rem;
     color: white;
     background-color: #0099ff;
@@ -238,11 +219,6 @@ header {
     width: 80%;
     height: inherit;
     background-color:chartreuse;
-}
-
-#purchaseBtn {
-    background-color: aqua;
-    margin-left: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -309,6 +285,7 @@ header {
     .mainContainer {
         height: 50%;
     }
+    
     .mainContainer .mainInfoContainer {
         margin-left: 5%;
         position: absolute;
@@ -325,9 +302,6 @@ header {
         padding: 3rem;
     }
 
-    #recommend {
-        padding-bottom: 1rem;
-    }
     #purchase {
         padding: 2rem;
     }
@@ -340,24 +314,6 @@ header {
         margin-top: 10rem;
     } 
 
-<<<<<<< Updated upstream
-    #control {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 3rem;
-        justify-content: center;
-    }
-    
-    #control button {
-        width: 12rem;
-        height: 2.5rem;
-        color: white;
-        background-color: #0099ff;
-        font-family: 'Nanum Gothic', 'serif';
-        font-size: 20px;
-    }
-=======
     #bookListWrapper {
         display: flex;
         flex-direction: column;
@@ -367,5 +323,4 @@ header {
         background-color: aquamarine;
     }
     
->>>>>>> Stashed changes
 }
