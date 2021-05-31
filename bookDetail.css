@@ -109,6 +109,7 @@ header {
 #bookImg {
     display: flex;
     padding: 4rem;
+    padding-bottom: 0;
     align-items: center;
 }
 
@@ -140,7 +141,6 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: darkcyan;
     justify-content: center;
 }
 
@@ -180,25 +180,25 @@ header {
 }
 
 #control {
-    padding: 2rem;
-    background-color: hotpink;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    list-style-type: none;
-    padding-left: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem;
     justify-content: center;
 }
 
 #control button {
-    display: inline;
-    width: 12rem;
+    width: calc(80%/2);
     height: 2.5rem;
     color: white;
     background-color: #0099ff;
     font-family: 'Nanum Gothic', 'serif';
     font-size: 20px;
+}
+
+#purchaseBtn {
+    background-color: aqua;
+    margin-left: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -275,4 +275,21 @@ header {
     #bookSubInfo {
         margin-top: 10rem;
     } 
+
+    #control {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem;
+        justify-content: center;
+    }
+    
+    #control button {
+        width: 12rem;
+        height: 2.5rem;
+        color: white;
+        background-color: #0099ff;
+        font-family: 'Nanum Gothic', 'serif';
+        font-size: 20px;
+    }
 }
