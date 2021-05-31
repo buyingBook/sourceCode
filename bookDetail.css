@@ -79,43 +79,53 @@ header {
     color: white;
 }
 
-#mainSection div {
+.mainSection div {
     display: inline;
 }
 
-#mainSection {
+.mainSection {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#bookMainInfo {
+.mainContainer {
+    display: inherit;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.mainContainer .mainInfoContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mainContainer .subInfoContainer {
+    display: inherit;
+    width: 90%;
+    margin-left: 5%;
 }
 
 #mainInfo {
     width: 100%;
 }
 
-#author, #publishing {
-    font-size: 16px;
-}
-
-#bookImg {
-    display: flex;
-    padding: 4rem;
-    padding-bottom: 0;
-    align-items: center;
-}
-
 #money {
     width: 100%;
 }
+
 #money h3{
     color: blue;
     font-size: 20px;
@@ -124,17 +134,11 @@ header {
     text-align: right;
 }
 
-#bookSubInfo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
 #detailInfo {
     font-size: 18px;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    width: 90;
 }
 
 #purchase {
@@ -158,6 +162,8 @@ header {
     text-align: right;
     width: 5rem;
     height: 2.5rem;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', 'serif';
 }
 
 #choiceZone button {
@@ -167,43 +173,58 @@ header {
     font-size: 20px;
 }
 
-#choiceZone input {
-    font-size: 16px;
-    font-family: 'Nanum Gothic', 'serif';
-}
-
 #choiceZone p {
     width: 100%;
     margin-right: 1rem;
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #control {
+    padding: 1rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 3rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
     justify-content: center;
 }
 
 #control button {
-    width: calc(80%/2);
+    display: inline;
+    width: 45%;
     height: 2.5rem;
     color: white;
     background-color: #0099ff;
     font-family: 'Nanum Gothic', 'serif';
     font-size: 20px;
+    margin: 1%;
 }
 
-#purchaseBtn {
-    background-color: aqua;
-    margin-left: 3rem;
+#bookListWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    width: 100%;
+    height: 500rem;
+    background-color: aquamarine;
+    justify-content: center;
+
+}
+
+#bookList {
+    display: inherit;
+    /* flex-direction: column;
+    flex-flow: nowrap; */
+    width: 80%;
+    height: inherit;
+    background-color:chartreuse;
 }
 
 @media (min-width: 768px) {
 
     header {
+        position: relative;
         display: block;
         padding: 1rem;
     }
@@ -223,8 +244,8 @@ header {
         height: 4.7rem;
         width: 100%;
         padding: 0;
-        margin-top: 5rem;
         display: block;
+        position: relative;
     }
     
     #menuBar ul {
@@ -256,17 +277,34 @@ header {
         color: white;
     }
 
-    section {
-        margin-top: 3rem;
+    .mainSection {
+        padding-top: 3%;
+        height: 70%;
     }
 
-    #mainSection {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .mainContainer {
+        height: 50%;
+    }
+    
+    .mainContainer .mainInfoContainer {
+        margin-left: 5%;
+        position: absolute;
+        width: 35%;
     }
 
+    .mainContainer .subInfoContainer {
+        width: 45%;
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+
+    #detailInfo {
+        padding: 3rem;
+    }
+
+    #purchase {
+        padding: 2rem;
+    }
     #bookImg{
         padding-top: 1rem;
         padding-bottom: 0;
@@ -276,20 +314,13 @@ header {
         margin-top: 10rem;
     } 
 
-    #control {
+    #bookListWrapper {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 3rem;
-        justify-content: center;
+        flex-direction: column;
+        flex-flow: nowrap;
+        width: 80%;
+        height: 500rem;
+        background-color: aquamarine;
     }
     
-    #control button {
-        width: 12rem;
-        height: 2.5rem;
-        color: white;
-        background-color: #0099ff;
-        font-family: 'Nanum Gothic', 'serif';
-        font-size: 20px;
-    }
 }
