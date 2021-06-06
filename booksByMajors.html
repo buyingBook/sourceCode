@@ -36,6 +36,20 @@
 <section class = "mainSection">
     <div class = "mainContainer">
         <div class = "optionContainer">
+            <select id = "majors">
+                <option value="all" selected>전체</option>
+                <option value="cse">컴퓨터소프트웨어공학과</option>
+                <option value="machine">기계공학과</option>
+                <option value="chemistry">응용화학과</option>
+                <option value="business">경영학과</option>
+            </select>
+            <select id = "grade">
+                <option value="all" selected>전체</option>
+                <option value="freshman">1학년</option>
+                <option value="sophomore">2학년</option>
+                <option value="junior">3학년</option>
+                <option value="senior">4학년</option>
+            </select>
         </div>
         <div class = "bookListWrapper">
             <table class = "bookList"> 
@@ -106,11 +120,23 @@
                 </tr>
             </table>
         </div>
-        <div class = "pagingContainer"></div>
+        <div class = "pagingContainer">
+            <a id = "paging" href="#">《</a>
+            <a id = "paging" href="#">〈</a>
+            <a class = "select" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a id = "paging" href="#">〉</a>
+            <a id = "paging" href="#">》</a>
+        </div>
     </div>
 </section>
 <!-- 바닥글 -->
-<footer></footer>
+<footer>
+    제작자: 17 신철진, 18 김혜림, 19 박유경, 19 정수민
+</footer>
 <script>
 if(matchMedia("(min-width: 768px)").matches) {
     var close = document.getElementById("closebtn");
